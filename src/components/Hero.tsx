@@ -5,7 +5,7 @@ import { Petals } from "./Petals";
 
 const {
   props: { srcSet: wide },
-} = getImageProps({ src: "/images/kuchaman-fort.webp", alt: "", width: 1536, height: 1024, sizes: "100vw" });
+} = getImageProps({ src: "/images/hawa-mahal.webp", alt: "", width: 1536, height: 1024, sizes: "100vw" });
 const {
   props: { srcSet: portrait, ...heroImg },
 } = getImageProps({ src: "/images/hero-haveli.webp", alt: "", width: 1024, height: 1536, sizes: "100vw" });
@@ -13,7 +13,7 @@ const {
 export function Hero() {
   return (
     <section className="relative flex min-h-[100svh] flex-col items-center overflow-hidden">
-      {/* Painted Shekhawati haveli on phones, Kuchaman fort on larger screens; each device downloads only its own */}
+      {/* Painted Shekhawati haveli on phones, Hawa Mahal on larger screens; each device downloads only its own */}
       <picture>
         <source media="(min-width: 768px)" srcSet={wide} />
         <source srcSet={portrait} />
@@ -22,10 +22,11 @@ export function Hero() {
           alt="Watercolour of a painted Shekhawati haveli at golden hour"
           loading="eager"
           fetchPriority="high"
-          className="absolute inset-0 h-full w-full object-cover object-bottom"
+          className="absolute inset-x-0 bottom-0 h-full w-full object-cover object-bottom md:h-[62%]"
         />
       </picture>
-      <div className="sky-fade absolute inset-0" />
+      {/* On wide screens the palace sits in the lower part so the names and date stay on clear sky */}
+      <div className="sky-fade absolute inset-x-0 bottom-0 h-full md:h-[62%]" />
       {/* Rose and gold corner garlands; the right one is the left mirrored */}
       {(["left-0", "right-0 -scale-x-100"] as const).map((side) => (
         <div
@@ -37,7 +38,7 @@ export function Hero() {
       ))}
       <Petals />
 
-      <div className="relative z-10 flex flex-col items-center px-6 pt-[12svh] text-center md:pt-[10svh]">
+      <div className="relative z-10 flex flex-col items-center px-6 pt-[12svh] text-center [text-shadow:0_0_16px_var(--pearl),0_0_6px_var(--pearl)] md:pt-[6svh]">
         <p lang="hi" className="font-hindi text-sm text-gold sm:text-base">
           ॥ श्री गणेशाय नमः ॥
         </p>

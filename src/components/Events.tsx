@@ -20,9 +20,10 @@ export function Events() {
       <div className="relative mx-auto max-w-5xl">
         <SectionHeading eyebrow="16 – 21 November 2026" titleHi="मांगलिक कार्यक्रम" title="Wedding Ceremonies" />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Flex rather than grid so a short last row stays centred */}
+        <div className="flex flex-wrap justify-center gap-6">
           {events.map((event, i) => (
-            <Reveal key={event.id} delay={(i % 3) * 100}>
+            <Reveal key={event.id} delay={(i % 3) * 100} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc((100%-48px)/3)]">
               {/* Compact row on phones, arched card from sm up */}
               <article className="flex h-full items-center gap-4 rounded-2xl border border-gold/40 bg-pearl/85 p-4 sm:flex-col sm:gap-0 sm:rounded-b-2xl sm:rounded-t-[999px] sm:px-5 sm:pb-6 sm:pt-8 sm:text-center">
                 <div className="relative h-24 w-24 shrink-0 sm:h-32 sm:w-32">

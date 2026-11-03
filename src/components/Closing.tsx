@@ -61,8 +61,8 @@ export function Venue() {
       {/* Scene sits below the text; its sky fades into the page */}
       <div className="relative -mt-8 aspect-[3/2] w-full md:-mt-24 md:aspect-[16/7]">
         <Image
-          src="/images/desert-chhatri.webp"
-          alt="Watercolour of sandstone chhatris on the Shekhawati dunes at sunset"
+          src="/images/kuchaman-fort.webp"
+          alt="Watercolour of Kuchaman fort on its hill above the town at dusk"
           fill
           sizes="100vw"
           className="object-cover object-bottom"
@@ -137,12 +137,12 @@ export function Families() {
 
 export function Footer() {
   return (
-    <footer className="relative flex min-h-[90svh] flex-col items-center overflow-hidden px-6 pt-24 text-center md:min-h-[900px]">
+    <footer className="relative flex min-h-[90svh] flex-col items-center overflow-hidden px-6 pt-24 text-center md:min-h-[1040px]">
       {/* Portrait scene: full-bleed on phones, a centred column with feathered sides on desktop */}
       <div className="absolute inset-y-0 left-1/2 w-full -translate-x-1/2 md:w-[600px] md:[mask-image:linear-gradient(to_right,transparent,black_22%,black_78%,transparent)]">
         <Image
-          src="/images/kuldevi-temple.webp"
-          alt="Watercolour of a hilltop Mata temple with saffron flags at dusk"
+          src="/images/karni-mata.webp"
+          alt="Watercolour of the carved marble gateway of the Karni Mata temple, Deshnoke"
           fill
           sizes="(min-width: 768px) 600px, 100vw"
           className="object-cover object-bottom"
