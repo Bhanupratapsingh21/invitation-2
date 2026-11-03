@@ -242,10 +242,10 @@ export const families = {
     titleHi: "मीठी मनुहार",
     names: ["दिव्या", "अभि", "गगन", "पीहू", "कुलवंश", "नियति"],
   },
-  // The card also lists phone numbers; left off the public site.
   preshak: {
     titleHi: "प्रेषक",
     names: ["ठा.सा. प्रतापसिंह शेखावत", "S/o स्व. ठा.सा. प्रेमसिंह जी पटवारी"],
     place: "ठिकाना-घाटवा, जिला-डीडवाना-कुचामन",
+    phones: ["9724673064", "9327684669", "9667654625"],
   },
 };

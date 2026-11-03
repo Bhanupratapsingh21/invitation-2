@@ -77,11 +77,13 @@ function NameGroup({
   title,
   names,
   place,
+  phones,
   small = false,
 }: {
   title: string;
   names: string[];
   place?: string;
+  phones?: string[];
   small?: boolean;
 }) {
   return (
@@ -100,12 +102,25 @@ function NameGroup({
           {place}
         </p>
       )}
+      {phones && (
+        <p className="mt-2 flex flex-wrap justify-center gap-x-3 gap-y-1 text-[15px] tabular-nums">
+          {phones.map((phone) => (
+            <a
+              key={phone}
+              href={`tel:+91${phone}`}
+              className="text-rani underline decoration-gold/40 underline-offset-4 hover:decoration-rani"
+            >
+              {phone}
+            </a>
+          ))}
+        </p>
+      )}
     </div>
   );
 }
 
 export function Families() {
-  const groups: { titleHi: string; names: string[]; place?: string }[] = [
+  const groups: { titleHi: string; names: string[]; place?: string; phones?: string[] }[] = [
     families.uttarakankshi,
     families.darshanabhilashi,
     families.dadera,
@@ -122,7 +137,7 @@ export function Families() {
         <div className="grid gap-12 md:grid-cols-2">
           {groups.map((g, i) => (
             <Reveal key={g.titleHi} delay={(i % 2) * 120}>
-              <NameGroup title={g.titleHi} names={g.names} place={g.place} />
+              <NameGroup title={g.titleHi} names={g.names} place={g.place} phones={g.phones} />
             </Reveal>
           ))}
         </div>
