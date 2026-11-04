@@ -21,12 +21,12 @@ const tiroDevanagari = Tiro_Devanagari_Hindi({
   weight: "400",
 });
 
-// Placeholder until the groom-side site has its own domain.
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3001";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://invitation-2-beta.vercel.app";
 const TITLE = "Pawan & Neha · Wedding Invitation";
 const DESCRIPTION =
   "With the blessings of Shri Vinayak ji and Kuldevi Jamuvay Maa, the Shekhawat family warmly invites you to the wedding of Kunwar Pawan Singh and Neha Kanwar · 16–21 November 2026 · Ghatwa (Didwana-Kuchaman).";
-const OG_IMAGE = { url: "/og.jpg", width: 1200, height: 630, alt: "Pawan & Neha · 21 November 2026 · Ghatwa" };
+// Renamed whenever the image changes, so WhatsApp fetches it again instead of using its cache.
+const OG_IMAGE = { url: "/og-pawan.jpg", type: "image/jpeg", width: 1200, height: 630, alt: "Pawan & Neha · 21 November 2026 · Ghatwa" };
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

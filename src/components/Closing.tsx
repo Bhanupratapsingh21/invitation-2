@@ -28,6 +28,20 @@ export function Baraat() {
   );
 }
 
+function DirectionsLink({ href }: { href: string }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener"
+      className="mt-5 inline-flex items-center gap-2 rounded-full border border-rani/60 bg-pearl px-6 py-2.5 text-sm uppercase tracking-[0.25em] text-rani transition-colors hover:bg-rani hover:text-pearl"
+    >
+      <PinIcon className="h-4 w-4" />
+      Get directions
+    </a>
+  );
+}
+
 export function Venue() {
   return (
     <section className="relative overflow-hidden pt-24">
@@ -39,6 +53,7 @@ export function Venue() {
         </p>
         <p className="mt-1 text-xl text-ink">{homeVenue.name}</p>
         <p className="mt-2 text-lg italic text-ink/65">At the groom&apos;s family home.</p>
+        <DirectionsLink href={homeVenue.mapUrl} />
 
         <Ornament className="my-8" />
 
@@ -48,15 +63,7 @@ export function Venue() {
         </p>
         <p className="mt-1 text-xl text-ink">{weddingVenue.name}</p>
         <p className="mt-2 text-lg italic text-ink/65">At the bride&apos;s family home.</p>
-        <a
-          href={weddingVenue.mapUrl}
-          target="_blank"
-          rel="noopener"
-          className="mt-5 inline-flex items-center gap-2 rounded-full border border-rani/60 bg-pearl px-6 py-2.5 text-sm uppercase tracking-[0.25em] text-rani transition-colors hover:bg-rani hover:text-pearl"
-        >
-          <PinIcon className="h-4 w-4" />
-          Get directions
-        </a>
+        <DirectionsLink href={weddingVenue.mapUrl} />
       </Reveal>
       {/* Scene sits below the text; its sky fades into the page */}
       <div className="relative -mt-8 aspect-[3/2] w-full md:-mt-24 md:aspect-[16/7]">

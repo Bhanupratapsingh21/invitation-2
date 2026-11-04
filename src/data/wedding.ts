@@ -55,11 +55,12 @@ export const bride = {
   placeHi: "ठिकाना-कोठारिया (नाथद्वारा-राजसमंद)",
 };
 
-// Pre-wedding ceremonies are at the groom's home in Ghatwa (no map link yet).
+// Pre-wedding ceremonies are at the groom's home in Ghatwa unless an event names its own venue.
 export const homeVenue = {
-  name: "Manji ki Dhani, Ghatwa (Didwana-Kuchaman)",
-  nameHi: "मानजी की ढाणी, घाटवा (डीडवाना-कुचामन)",
+  name: "Family home, Manji ki Dhani, Ghatwa (Didwana-Kuchaman)",
+  nameHi: "निवास स्थान, मानजी की ढाणी, घाटवा (डीडवाना-कुचामन)",
   short: "Ghatwa",
+  mapUrl: "https://maps.app.goo.gl/uVSYwjnDYkQCnUnG7",
 };
 
 // The pheras are at the bride's home in Kothariya.
