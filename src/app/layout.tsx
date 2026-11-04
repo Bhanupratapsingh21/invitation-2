@@ -23,21 +23,21 @@ const tiroDevanagari = Tiro_Devanagari_Hindi({
 
 // Placeholder until the groom-side site has its own domain.
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3001";
-const TITLE = "Pavan & Neha · Wedding Invitation";
+const TITLE = "Pawan & Neha · Wedding Invitation";
 const DESCRIPTION =
-  "With the blessings of Shri Vinayak ji and Kuldevi Jamuvay Maa, the Shekhawat family warmly invites you to the wedding of Kunwar Pavan Singh and Neha Kanwar · 16–21 November 2026 · Ghatwa (Didwana-Kuchaman).";
-const OG_IMAGE = { url: "/og.jpg", width: 1200, height: 630, alt: "Pavan & Neha · 21 November 2026 · Ghatwa" };
+  "With the blessings of Shri Vinayak ji and Kuldevi Jamuvay Maa, the Shekhawat family warmly invites you to the wedding of Kunwar Pawan Singh and Neha Kanwar · 16–21 November 2026 · Ghatwa (Didwana-Kuchaman).";
+const OG_IMAGE = { url: "/og.jpg", width: 1200, height: 630, alt: "Pawan & Neha · 21 November 2026 · Ghatwa" };
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Pavan & Neha · मंगल परिणयोत्सव",
+  title: "Pawan & Neha · मंगल परिणयोत्सव",
   description: DESCRIPTION,
-  applicationName: "Pavan & Neha",
+  applicationName: "Pawan & Neha",
   authors: [{ name: "bpss", url: "https://bpss.in" }],
   creator: "bpss.in",
   keywords: [
-    "Pavan weds Neha",
-    "Pavan Singh Shekhawat",
+    "Pawan weds Neha",
+    "Pawan Singh Shekhawat",
     "Neha Kanwar",
     "wedding invitation",
     "शुभ विवाह",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    siteName: "Pavan & Neha",
+    siteName: "Pawan & Neha",
     locale: "en_IN",
     title: TITLE,
     description: "16–21 November 2026 · Ghatwa, Didwana-Kuchaman",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     description: "16–21 November 2026 · Ghatwa, Didwana-Kuchaman",
     images: [OG_IMAGE],
   },
-  appleWebApp: { title: "Pavan & Neha", statusBarStyle: "default" },
+  appleWebApp: { title: "Pawan & Neha", statusBarStyle: "default" },
   formatDetection: { telephone: false },
 };
 

@@ -40,7 +40,7 @@ export const invitation = {
 };
 
 export const groom = {
-  name: "Pavan Singh",
+  name: "Pawan Singh",
   nameHi: "आयुष्मान कुँ. पवन सिंह",
   grandsonOfHi: "स्व. ठा.सा. प्रेमसिंह जी शेखावत",
   sonOfHi: "ठा.सा. प्रतापसिंह जी शेखावत",

@@ -86,7 +86,7 @@ export function Envelope() {
         </div>
 
         <div className="absolute inset-x-0 bottom-[9%] text-center">
-          <p className="font-script text-3xl text-rani">Pavan &amp; Neha</p>
+          <p className="font-script text-3xl text-rani">Pawan &amp; Neha</p>
           <p className="mt-1 text-[11px] uppercase tracking-[0.4em] text-gold">
             Tap to open
           </p>

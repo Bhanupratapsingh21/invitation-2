@@ -169,7 +169,7 @@ export function Footer() {
           {invitation.familyHi}
         </p>
         <p className="mt-2 text-lg italic text-ink/65">{invitation.family}</p>
-        <p className="mt-8 font-script text-5xl text-rani">Pavan &amp; Neha</p>
+        <p className="mt-8 font-script text-5xl text-rani">Pawan &amp; Neha</p>
         <p className="mt-2 text-sm uppercase tracking-[0.35em] text-gold">21 · 11 · 2026</p>
       </Reveal>
       <p className="absolute bottom-4 z-10 rounded-full bg-pearl/85 px-4 py-1.5 text-xs tracking-[0.2em] text-ink/70">
