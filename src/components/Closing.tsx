@@ -62,7 +62,7 @@ export function Venue() {
           {weddingVenue.nameHi}
         </p>
         <p className="mt-1 text-xl text-ink">{weddingVenue.name}</p>
-        <p className="mt-2 text-lg italic text-ink/65">At the bride&apos;s family home.</p>
+        <p className="mt-2 text-lg italic text-ink/65">Hosted by the bride&apos;s family.</p>
         <DirectionsLink href={weddingVenue.mapUrl} />
       </Reveal>
       {/* Scene sits below the text; its sky fades into the page */}

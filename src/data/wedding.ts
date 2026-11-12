@@ -63,10 +63,10 @@ export const homeVenue = {
   mapUrl: "https://maps.app.goo.gl/uVSYwjnDYkQCnUnG7",
 };
 
-// The pheras are at the bride's home in Kothariya.
+// The pheras are at the bride's side's venue in Kothariya (same as the bride-side site).
 export const weddingVenue = {
-  name: "Kothariya (Nathdwara-Rajsamand)",
-  nameHi: "ठि. कोठारिया (नाथद्वारा-राजसमंद)",
+  name: "Old Girls School, near Satyanarayan Mandir, Kothariya, Nathdwara",
+  nameHi: "पुरानी गर्ल्स स्कूल, सत्यनारायण मंदिर के पास, कोठारिया, नाथद्वारा",
   short: "Kothariya",
   mapUrl: "https://maps.app.goo.gl/SoJ6ENs2Gz2JLivD8",
 };
